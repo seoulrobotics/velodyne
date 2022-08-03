@@ -4,11 +4,10 @@ project(velodyne_driver)
 # Set minimum C++ standard to C++11
 if (NOT "${CMAKE_CXX_STANDARD_COMPUTED_DEFAULT}")
   message(STATUS "Changing CXX_STANDARD from C++98 to C++11")
-  #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-  set(CMAKE_CXX_STANDARD 11)
+  set(CMAKE_CXX_STANDARD 14)
 elseif ("${CMAKE_CXX_STANDARD_COMPUTED_DEFAULT}" STREQUAL "98")
   message(STATUS "Changing CXX_STANDARD from C++98 to C++11")
-  set(CMAKE_CXX_STANDARD 11)
+  set(CMAKE_CXX_STANDARD 14)
 endif()
 
 set(${PROJECT_NAME}_CATKIN_DEPS 
