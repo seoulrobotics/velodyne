@@ -9,7 +9,7 @@ elseif ("${CMAKE_CXX_STANDARD_COMPUTED_DEFAULT}" STREQUAL "98")
   message(STATUS "Changing CXX_STANDARD from C++98 to C++11")
   set(CMAKE_CXX_STANDARD 14)
 endif()
-
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(${PROJECT_NAME}_CATKIN_DEPS
     angles
     nodelet
